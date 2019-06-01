@@ -1,0 +1,70 @@
+body {
+  color: #727574;
+  font-size: 16px;
+  font-family: Verdana, Geneva, sans-serif;
+  text-shadow: 1px 1px #727574;
+}
+
+/*-----layout-elements-----*/
+
+.menu-link{
+  text-decoration: none;
+}
+
+.menu-link:hover{
+  text-shadow: 1px 1px #121113;
+}
+
+.button-large {
+  color: white;
+  text-decoration: none;
+}
+
+.image-bg {
+  color: white;
+  text-shadow: 2px 2px #121113;
+}
+
+
+/*-----titles-----*/
+
+.title-large {
+  font-size: 42px;
+  text-shadow: 2px 2px #121113;
+}
+
+.title-medium {
+  font-size: 36px;
+}
+
+.title-small {
+  font-size: 26px;
+}
+
+.title-medium, .title-small {
+  text-shadow: 1px 1px #121113;
+}
+
+/*-----text-----*/
+
+.text-large {
+  font-size: 20px;
+}
+
+.text-medium {
+  font-size: 16px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+/*-----effects-----*/
+
+.bold {
+  font-weight: bold;
+}
+
+.text-purple {
+  color: #8431c3;
+}

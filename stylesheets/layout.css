@@ -130,10 +130,6 @@
   /*text-shadow: 2px 2px #121113;*/
 
 .image-bg {
-  background-color: #DBBBC2;
-  background-image: url('../images/intro_bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 80px;
   margin-top: 95px;
 }
@@ -152,6 +148,7 @@
 }
 
 .image-header:hover {
+  transition-delay: all 5s;
   cursor: url('../images/zerg.cur'), auto;
 }
 
@@ -179,6 +176,10 @@
 
 .float-right {
   float: right;
+}
+
+.member-moto:hover {
+  cursor: pointer;
 }
 
 

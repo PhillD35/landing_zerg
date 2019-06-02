@@ -4,8 +4,13 @@
   <meta charset="utf-8">
   <meta name="keywords" content="зерги рой эвалюция развитие завоевание">
   <meta name="keywords" content="стань частью роя">
+
   <link rel="stylesheet" href="stylesheets/text.css">
   <link rel="stylesheet" href="stylesheets/layout.css">
+
+  <script type="text/javascript" charset="utf-8" src="js/lib/jquery/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/lib/parallax.js-1.5.0/parallax.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
   <title>Стань частью роя!</title>
 </head>
 <body>
@@ -17,26 +22,26 @@
       <div class="menu buffer-both-medium float-right bold">
         <ul>
           <li class="inline">
-          <a class="menu-link text-purple" href="#intro">О нас</a>
+          <a class="link menu-link text-purple" href="#intro">О нас</a>
           </li>
           <li class="inline">
-          <a class="menu-link text-purple" href="#features">Преимущества</a>
+          <a class="link menu-link text-purple" href="#features">Преимущества</a>
           </li>
           <li class="inline">
-          <a class="menu-link text-purple" href="#team">Команда</a>
+          <a class="link menu-link text-purple" href="#team">Команда</a>
           </li>
           <li class="inline">
-          <a class="menu-link text-purple" href="#enlist">Вступить</a>
+          <a class="link menu-link text-purple" href="#enlist">Вступить</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="image-bg align-center">
-    <img class="intro-logo" src="images/intro_logo.png" alt="Эмблема роя">
+  <div class="align-center image-bg" data-parallax="scroll" data-image-src="images/intro_bg.jpg">
+    <img id="logo" class="intro-logo" src="images/intro_logo.png" alt="Эмблема роя">
     <h1 id="intro" class="title-large buffer-both-medium">Ты нужен рою!</h1>
     <h2 class="text-large bold buffer-both-small">Хочешь увидеть галактику? Завести знакомства? Рой ждёт тебя!</h2>
-    <a class="button-large bold bg-brown buffer-both-small" href="#enlist">Присоедениться немедленно!</a>
+    <a class="link button-large bold bg-brown buffer-both-small" href="#enlist">Присоедениться немедленно!</a>
     <small class="text-small block">*Путишествия не гарантированны.</small>
   </div>
   <div id="features" class="padding-large">
@@ -69,21 +74,29 @@
       <p class="text-large align-center buffer-bottom-large">Ум, честь и совесть роя!</p>
       <div class="column-50 float-left">
         <img class="image-member float-left" src="images/member_stukov_hero.png" alt="Адмирал Стуков">
-        <h3 class="title-small buffer-both-small">Адмирал Стуков</h3>
-        <small class="text-small text-purple">Отставить формальности</small>
-        <p class="text-medium buffer-both-small member-text">Бывший Адмирал ОЗД, был предан и убит своими же подчинёнными. Стал частью роя и ни о чём не жалеет.</p>
-        <img class="button-small buffer-both-small float-right" src="images/facebook.png" alt="facebook">
-        <img class="button-small buffer-both-small float-right" src="images/twitter.png" alt="twitter">
-        <img class="button-small buffer-both-small float-right" src="images/youtube.png" alt="youtube">
+        <div class="member-text align-center">
+          <h3 class="title-small buffer-both-small">Адмирал Стуков</h3>
+          <small class="text-small text-purple member-moto">Отставить формальности</small>
+          <p class="text-medium buffer-both-small member-about">Бывший Адмирал ОЗД, был предан и убит своими же подчинёнными. Стал частью роя и ни о чём не жалеет.</p>
+          <div>
+            <img class="button-small buffer-both-small" src="images/facebook.png" alt="facebook">
+            <img class="button-small buffer-both-small" src="images/twitter.png" alt="twitter">
+            <img class="button-small buffer-both-small" src="images/youtube.png" alt="youtube">
+          </div>
+        </div>
       </div>
       <div class="column-50 float-left">
         <img class="image-member float-left" src="images/member_zagara_hero.png" alt="Мать стаи Загара">
-        <h3 class="title-small buffer-both-small">Мать стаи Загара</h3>
-        <small class="text-small text-purple">Лучший помошник Керриган</small>
-        <p class="text-medium buffer-both-small member-text">Мать-одиночка с вулканической планеты Чарр, присоеденившись к рою за 4 года стала королевой.</p>
-        <img class="button-small buffer-both-small float-right" src="images/facebook.png" alt="facebook">
-        <img class="button-small buffer-both-small float-right" src="images/twitter.png" alt="twitter">
-        <img class="button-small buffer-both-small float-right" src="images/youtube.png" alt="youtube">
+        <div class="member-text">
+          <h3 class="title-small buffer-both-small">Мать стаи Загара</h3>
+          <small class="text-small text-purple member-moto">Лучший помошник Керриган</small>
+          <p class="text-medium buffer-both-small member-about">Мать-одиночка с вулканической планеты Чарр, присоеденившись к рою за 4 года стала королевой.</p>
+          <div>
+            <img class="button-small buffer-both-small" src="images/facebook.png" alt="facebook">
+            <img class="button-small buffer-both-small" src="images/twitter.png" alt="twitter">
+            <img class="button-small buffer-both-small" src="images/youtube.png" alt="youtube">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -95,7 +108,7 @@
       <div class="column-50 float-left  align-center">
         <h2 class="title-medium">Стань частью роя!</h2>
         <h3 class="title-small buffer-both-small">Лучше с нами, чем против нас.</h3>
-        <a id="enlist" class="button-large bg-brown bold buffer-both-small" href="#">Присоединяюсь!</a>
+        <a id="enlist" class="link button-large bg-brown bold buffer-both-small" href="#logo">Присоединяюсь!</a>
       </div>
     </div>
   </div>

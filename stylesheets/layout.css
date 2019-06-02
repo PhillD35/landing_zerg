@@ -96,6 +96,20 @@
   padding: 60px;
 }
 
+/*-----forms-----*/
+
+/*text.css .input-text*/
+  /*font-size: 125%;*/
+  /*color: #8431c3;*/
+  /*text-shadow: 1px 1px #727574;*/
+
+.input-text {
+  border: 2px solid #727574;
+  border-radius: 5px;
+  padding: 5px;
+  min-width: 300px;
+}
+
 /*-----containers-----*/
 
 .container {
@@ -244,4 +258,3 @@
     display: block;
   }
 }
-

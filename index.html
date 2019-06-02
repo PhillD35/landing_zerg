@@ -105,10 +105,31 @@
       <div class="column-50 float-left image-large">
         <img class="image-large" src="images/ultra.png" alt="Ультралиск сражается с протосом.">
       </div>
-      <div class="column-50 float-left  align-center">
+      <div class="column-50 float-left align-center">
         <h2 class="title-medium">Стань частью роя!</h2>
         <h3 class="title-small buffer-both-small">Лучше с нами, чем против нас.</h3>
-        <a id="enlist" class="link button-large bg-brown bold buffer-both-small" href="#logo">Присоединяюсь!</a>
+        <div class="form">
+          <form id="enlist" action="/orders" method="post">
+            <p class="buffer-both-small">
+              <input class="input-text" type="text" name="order[name]" placeholder="Ваше имя">
+            </p>
+            <p class="buffer-both-small">
+              <input class="input-text" type="email" name="order[email]" placeholder="Электронная почта">
+            </p>
+            <p class="buffer-both-small">
+              <input class="input-text" type="text" name="order[phone]" placeholder="Номер телефона">
+            </p>
+            <p class="buffer-both-small">
+              <input class="input-text" type="text" name="order[address]" placeholder="Планета и город">
+            </p>
+            <p class="buffer-both-small">
+              <input type="checkbox" name="order[subscribe]"> Подписаться на спец предложения
+            </p>
+            <p class="buffer-both-small">
+              <input class="link button-large bold bg-brown buffer-both-small" type="submit" value="Заказать уже!">
+            </p>
+          </form>
+        </div>
       </div>
     </div>
   </div>

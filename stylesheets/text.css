@@ -25,6 +25,12 @@ body {
   text-shadow: 2px 2px #121113;
 }
 
+.input-text {
+  text-shadow: 1px 1px #727574;
+  color: #8431c3;
+  font-size: 125%;
+}
+
 
 /*-----titles-----*/
 

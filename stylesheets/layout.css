@@ -79,6 +79,7 @@
 
 .button-large:hover, .button-small:hover {
   background-color: #8431c3;
+  transition: background-color 0.8s;
 }
 
 /*-----background-----*/
@@ -148,6 +149,10 @@
 .image-header {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.image-header:hover {
+  cursor: url('../images/zerg.cur'), auto;
 }
 
 /*-----effects-----*/

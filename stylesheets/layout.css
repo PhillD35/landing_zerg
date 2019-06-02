@@ -118,6 +118,9 @@
   width: 50%;
 }
 
+.member-text {
+  padding-left: 210px;
+}
 
 /*-----images-----*/
 
@@ -139,16 +142,12 @@
   border: 5px solid white;
   margin-right: 25px;
   margin-left: 25px;
+  width: 160px;
 }
 
 .image-header {
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.image-large {
-  height: 100%
-  width: 100%
 }
 
 /*-----effects-----*/
@@ -203,6 +202,10 @@
   .column-50, .image-member {
     float: none;
   }
+
+  .member-text {
+    padding: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -235,3 +238,4 @@
     display: block;
   }
 }
+
